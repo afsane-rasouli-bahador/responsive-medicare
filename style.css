@@ -37,7 +37,7 @@ header section.header-top{
     z-index: 1000;
 }
 header section.header-top form input{
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid rgb(176, 227, 247);
     border-radius: 0.3rem;
 }
@@ -53,18 +53,18 @@ header div.header-btn-red a{
     border: 1px solid lightcoral;
     display: inline-block;
     color: lightcoral;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 0.3rem;
-
+    white-space: nowrap;
 }
 div.header-btn-blue a{
     border: 1px solid #173d79;
     background-color: #173d79;
     display: inline-block;
     color: white;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 0.3rem;
-
+    white-space: nowrap;
 }
 header div.header-btn-red a:hover{
     background-color: lightcoral;
@@ -321,8 +321,6 @@ main section.life div.slider-title{
 }
 main section.life div.life-right{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
 }
 main section.about-us{
@@ -337,15 +335,52 @@ main section.about-us img{
 }
 main section.about-us section.about-box{
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+}
+footer{
+    background-color: #e6e6e6;
+}
+footer div.footer-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #173d79;
+    border-bottom: 1px solid #888888;
+    padding: 1rem;
+}
+footer section.footer-logo img{
+    width: 70%;
+    padding: 1rem;
+
+}
+footer section.footer-content{
+    color: #545454;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+footer section.footer-link{
+    padding: 1rem;
+}
+footer section.footer-link ul{
+    flex-direction: column;
+    gap: 20px;
+}
+footer section.footer-link ul li a{
+    color: #545454;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+footer section.footer-link ul li a:hover{
+    text-decoration: underline;
+}
+footer section.footer-links{
+    gap: 10px;
+
 }
 
-
-
-
-
 @media screen and (max-width: 470px) {
+    header section.header-top form input{
+        width:95%;
+    }
     div#container header section.header-top{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -376,6 +411,7 @@ main section.about-us section.about-box{
         margin: auto;
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
     main section.slider{
         height: 70vh;
